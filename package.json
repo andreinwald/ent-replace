@@ -1,0 +1,24 @@
+{
+  "name": "ent-replace",
+  "version": "1.0",
+  "description": "Replacement for old library ent",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreinwald/ent-replace.git"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.4",
+    "@types/node": "^20.11.30",
+    "vitest": "^1.2.2"
+  },
+  "author": "https://github.com/andreinwald",
+  "license": "MIT"
+}
