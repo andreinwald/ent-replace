@@ -1,4 +1,4 @@
-{
+export const revEntities = {
     "9": "Tab;",
     "10": "NewLine;",
     "33": "excl;",

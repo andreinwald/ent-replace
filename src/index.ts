@@ -1,5 +1,5 @@
-const entities = require('./entities.json');
-const revEntities = require('./reversed.json');
+import {entities} from "./entities";
+import {revEntities} from "./revEntities";
 import {ucs2decode, ucs2encode} from "./ucs2";
 
 

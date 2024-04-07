@@ -1,4 +1,4 @@
-{
+export const entities = {
     "Aacute;": "\u00C1",
     "Aacute": "\u00C1",
     "aacute;": "\u00E1",
