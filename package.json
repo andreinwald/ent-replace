@@ -1,7 +1,7 @@
 {
   "name": "ent-replace",
-  "version": "1.0.3",
-  "description": "Replacement for old library ent",
+  "version": "1.0.4",
+  "description": "Replacement for abandoned library \"ent\". Encode and decode HTML entities",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
