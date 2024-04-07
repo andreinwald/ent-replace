@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.encode = exports.decode = void 0;
-const entities = require('./entities.json');
-const revEntities = require('./reversed.json');
+const entities_1 = require("./entities");
+const revEntities_1 = require("./revEntities");
 const ucs2_1 = require("./ucs2");
 function decode(str) {
     if (typeof str !== 'string') {
@@ -20,7 +20,7 @@ function decode(str) {
             // named entity
             let hasSemi = /;$/.test(match);
             let withoutSemi = hasSemi ? match.replace(/;$/, '') : match;
-            let target = entities[withoutSemi] || (hasSemi && entities[match]);
+            let target = entities_1.entities[withoutSemi] || (hasSemi && entities_1.entities[match]);
             if (typeof target === 'number') {
                 return (0, ucs2_1.ucs2encode)([target]);
             }
@@ -55,7 +55,7 @@ function encode(str, opts) {
     for (let i = 0; i < codePoints.length; i++) {
         let cc = codePoints[i];
         let c = (0, ucs2_1.ucs2encode)([cc]);
-        let e = revEntities[cc];
+        let e = revEntities_1.revEntities[cc];
         if (e && (cc >= 127 || special[c]) && !numeric) {
             chars.push('&' + (/;$/.test(e) ? e : e + ';'));
         }

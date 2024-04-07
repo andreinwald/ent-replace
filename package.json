@@ -1,6 +1,6 @@
 {
   "name": "ent-replace",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Replacement for old library ent",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
