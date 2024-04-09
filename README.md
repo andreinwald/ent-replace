@@ -63,3 +63,7 @@ All tests copied from original repository
 ```shell
 vitest
 ```
+
+## NPM
+https://www.npmjs.com/package/ent-replace
+```
