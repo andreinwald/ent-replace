@@ -1,10 +1,8 @@
 # Encode and decode HTML entities
-Replacement for abandoned library [ent](https://www.npmjs.com/package/ent)
+**Replacement for abandoned library** [ent](https://www.npmjs.com/package/ent) <br>
+Without using of deprecated punycode api.
 
-Without any dependencies and without using of punycode api.
-
-## Replacement in other libraries dependency
-Add to your package.json override:
+### Add to your package.json
 ```json
 {
   "overrides": {
@@ -17,12 +15,12 @@ and run
 npm update
 ```
 
-## Installation from scratch
+### Or install from scratch
 ```shell
 npm i ent-replace
 ```
 
-## Example
+## Usage examples
 ``` js
 const ent = require('ent');
 console.log(ent.encode('<span>©moo</span>'))
